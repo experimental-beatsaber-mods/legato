@@ -62,8 +62,14 @@ namespace Legato.Beatmaps {
 #endif
                                                                             beatmapLevelDataVersion: beatmapLevelDataVersion,
                                                                             gameplayModifiers: null,
-                                                                            playerSpecificSettings: null,
-                                                                            enableBeatmapDataCaching: false);
+                                                                            playerSpecificSettings: null
+                                                                            // enableBeatmapDataCaching no longer exists on this overload as of 1.45.1
+                                                                            // (decompiled and confirmed against DataModels.dll -- BeatmapDataLoader.LoadBeatmapDataAsync
+                                                                            // dropped the parameter entirely).
+#if !BEAT_SABER_1_45_1
+                                                                            , enableBeatmapDataCaching: false
+#endif
+                                                                            );
             if (beatmapData == null) {
                 throw new InvalidOperationException($"Beatmap could not be loaded for {beatmapKey.levelId}");
             }
