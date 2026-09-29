@@ -6,6 +6,10 @@ A compatibility library for Beat Saber PC mods
 
 This originally started out inside [ScoreSaber's PC Mod](https://github.com/ScoreSaber/pc-mod) and we decided to extract it into a re-usable library as we may need it for future projects or others may also stand to benefit. For us Legato keeps most game version differences out of the mod itself helping us focus on what's important
 
+## About this fork
+
+This is a personal, unofficial fork of [ScoreSaber/legato](https://github.com/ScoreSaber/legato), adding a new Beat Saber 1.45.1 compatibility profile (not supported upstream yet), as a prerequisite for porting ScoreSaber's PC mod to that version. Distributed here under the same [GNU GPLv3 License](LICENSE) as upstream — all credit for the original library goes to the ScoreSaber team.
+
 ## Install
 
 ```sh
