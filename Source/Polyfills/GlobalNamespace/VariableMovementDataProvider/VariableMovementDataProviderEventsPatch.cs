@@ -1,6 +1,6 @@
 #nullable enable
 
-#if BEAT_SABER_1_40_0 || BEAT_SABER_1_42_0
+#if BEAT_SABER_1_40_0 || BEAT_SABER_1_42_0 || BEAT_SABER_1_45_1
 using Legato.Gameplay.Movement;
 using HarmonyLib;
 

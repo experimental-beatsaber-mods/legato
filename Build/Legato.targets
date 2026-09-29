@@ -147,7 +147,7 @@
       <LegatoEnableGameSettings Condition="'$(LegatoEnableGameSettings)' == '' AND '@(_LegatoGameSettingsReference)' != ''">true</LegatoEnableGameSettings>
       <LegatoEnablePlatform Condition="'$(LegatoEnablePlatform)' == '' AND '$(LegatoTargetProfile)' == '1.29.0' AND '@(_LegatoMainReference)' != '' AND '@(_LegatoOculusPlatformReference)' != ''">true</LegatoEnablePlatform>
       <LegatoEnablePlatform Condition="'$(LegatoEnablePlatform)' == '' AND ('$(LegatoTargetProfile)' == '1.37.1' OR '$(LegatoTargetProfile)' == '1.38.0' OR '$(LegatoTargetProfile)' == '1.40.0') AND '@(_LegatoPlatformUserModelReference)' != ''">true</LegatoEnablePlatform>
-      <LegatoEnablePlatform Condition="'$(LegatoEnablePlatform)' == '' AND '$(LegatoTargetProfile)' == '1.42.0' AND '@(_LegatoPlatformCoreReference)' != '' AND '@(_LegatoSteamReference)' != ''">true</LegatoEnablePlatform>
+      <LegatoEnablePlatform Condition="'$(LegatoEnablePlatform)' == '' AND ('$(LegatoTargetProfile)' == '1.42.0' OR '$(LegatoTargetProfile)' == '1.45.1') AND '@(_LegatoPlatformCoreReference)' != '' AND '@(_LegatoSteamReference)' != ''">true</LegatoEnablePlatform>
       <LegatoEnableHarmonyEvents Condition="'$(LegatoEnableHarmonyEvents)' == '' AND '@(_LegatoHarmonyReference)' != ''">true</LegatoEnableHarmonyEvents>
       <LegatoEnableHttp Condition="'$(LegatoEnableHttp)' == '' AND '@(_LegatoHttpReference)' != ''">true</LegatoEnableHttp>
       <LegatoEnableSpatialTracking Condition="'$(LegatoEnableSpatialTracking)' == '' AND '@(_LegatoSpatialTrackingReference)' != ''">true</LegatoEnableSpatialTracking>
